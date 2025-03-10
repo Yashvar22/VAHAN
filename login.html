@@ -3,138 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LOGIN PAGE</title>
-    <link rel="stylesheet" href="login.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet" />
-    <style>
-      .logo {
-        font-family: "Bungee Shade", cursive;
-        font-size: 5rem;
-      }
-    </style>
-  </head>
-  <body>
-  
-    <div class="header">
-      <div class="logo-container">
-        <div class="logo">VAHAN</div>
-        <div class="subtitle">Compare, Choose, and Ride Smart!</div>
-      </div>
-      <div class="menu-icon" id="menuToggle">☰</div>
-    </div>
-
-    <!-- <div class="banner-img">
-      <img
-        src="/api/placeholder/400/150"
-        alt="Transportation vehicles including bus, auto rickshaw, and taxi"
-      />
-    </div> -->
-
-    <!-- Navigation Bar -->
-    <nav class="nav-container" >
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#" class="active">Home</a></li>
-        <li>
-          <a href="#" class="nav-link">My Rides 
-          <i class="fas fa-angle-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="#">Current Ride</a>
-            <a href="#">Ride History</a>
-            <a href="#">Schedule a Ride</a>
-            <a href="#">Saved Routes</a>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="nav-link">Help <i class="fas fa-angle-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="#">FAQ</a>
-            <a href="#">Contact Support</a>
-            <a href="#">Report an Issue</a>
-            <a href="#">Safety Tips</a>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="nav-link"
-            >Notifications <i class="fas fa-angle-down"></i
-          ></a>
-          <div class="dropdown-menu">
-            <a href="#">Unread</a>
-            <a href="#">Promotions</a>
-            <a href="#">Updates</a>
-            <a href="#">Settings</a>
-          </div>
-        </li>
-        <li>
-          <a href="#" class="nav-link"
-            >Settings <i class="fas fa-angle-down"></i
-          ></a>
-          <div class="dropdown-menu">
-            <a href="#">Profile</a>
-            <a href="#">Payment Methods</a>
-            <a href="#">Privacy</a>
-            <a href="#">Preferences</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="welcome-text">HELLO USER!!</div>
-
-
-    <div class="form-container">
-      <div class="form-group">
-        <label>Phone No. :</label>
-        <input type="tel" placeholder="Enter your phone number" />
-      </div>
-      <div class="form-group">
-        <label>Password :</label>
-        <input type="password" placeholder="Enter password" />
-      </div>
-    </div>
-
-    <button class="btn">LOGIN</button>
-
+    <title>Login Page</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo-container">
+          <div class="logo">VAHAN</div>
+          <div class="subtitle">Your trusted partner</div>
+        </div>
 
-    <div class="footer">
-      <div class="social-icons">
-        <span><i class="fab fa-instagram"></i></span>
-        <span><i class="fas fa-envelope"></i></span>
+        <!-- Desktop menu -->
+        <nav class="menu-desktop">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <!-- Mobile menu icon -->
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <!-- Login container (centered) -->
+        <div class="login-container">
+          <div class="login-header">
+            <h2 class="welcome-text">Welcome Back</h2>
+            <p class="login-subtitle">Sign in to continue to your account</p>
+          </div>
+
+          <form>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <div class="input-with-icon">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <i class="far fa-envelope"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-with-icon">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+                <i class="fas fa-lock"></i>
+              </div>
+            </div>
+
+            <div class="forgot-password">
+              <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn">Sign In</button>
+
+            <div class="divider">
+              <span>OR</span>
+            </div>
+
+            <div class="social-login">
+              <div class="social-btn">
+                <i class="fab fa-google"></i>
+              </div>
+              <div class="social-btn">
+                <i class="fab fa-facebook-f"></i>
+              </div>
+              <div class="social-btn">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </div>
+
+            <div class="register-link">
+              <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <span><i class="fab fa-facebook-f"></i></span>
         <span><i class="fab fa-twitter"></i></span>
-        <span><i class="fab fa-facebook"></i></span>
-      </div>
-      <div class="footer-links">
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">About Us</a>
-        <a href="#">Careers</a>
-      </div>
-      <div class="copyright">
-        © 2025 VAHAN Transportation. All Rights Reserved.
-      </div>
+        <span><i class="fab fa-instagram"></i></span>
+        <span><i class="fab fa-linkedin-in"></i></span>
+      </footer>
     </div>
-
-    <script>
-      // JavaScript for mobile menu toggle
-      document
-        .getElementById("menuToggle")
-        .addEventListener("click", function () {
-          document.getElementById("navMenu").classList.toggle("active");
-        });
-
-      // JavaScript for dropdown menus
-      const navLinks = document.querySelectorAll(".nav-link");
-      navLinks.forEach((link) => {
-        link.addEventListener("click", function (e) {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            this.nextElementSibling.classList.toggle("show");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
