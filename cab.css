@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf2c7;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #F26E61;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 40px;
+    color: #000;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .menu-icon i {
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .main-content {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .main-content h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .input-group i {
+    margin-right: 10px;
+    color: #000;
+  }
+  
+  .input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F26E61;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #f15a4b;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  .footer {
+    margin-top: 60px;
+    padding: 20px;
+    text-align: center;
+    background-color: #F26E61;
+  }
+  
+  .footer i {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s;
+  }
+  
+  .footer i:hover {
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .ride-options {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ride-options {
+      grid-template-columns: 1fr;
+    }
+  }
+  
