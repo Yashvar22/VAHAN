@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #f9e7bd;
-  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(135deg, #FFF1BA 0%, #FFF1BA 100%);
+  font-family: "Quicksand", sans-serif;
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
@@ -20,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 5%;
-  background-color: #fff;
+  background-color: #FFF1BA ;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 100;
@@ -32,31 +32,31 @@ body {
 }
 
 .logo {
-  font-family: "Playfair Display", serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #8b5a2b;
+  color: #080808;
   letter-spacing: 2px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 }
 
 .subtitle {
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 0.9rem;
-  color: #d4a76a;
+  color: #070707;
   letter-spacing: 1px;
 }
 
 .menu-icon {
   font-size: 1.8rem;
   cursor: pointer;
-  color: #8b5a2b;
+  color: #080808;
   display: none;
 }
 
 /* Navigation Styles */
 .nav-container {
-  background: linear-gradient(90deg, #8b5a2b 0%, #d4a76a 100%);
+  background: linear-gradient(90deg, #f9796d 0%, #fe9389 100%);
   padding: 0 5%;
   position: sticky;
   top: 0;
@@ -66,10 +66,12 @@ body {
 
 .nav-menu {
   display: flex;
+  /* justify-content: flex-end; */
+  flex-direction: row-reverse;
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: flex-end; /* Align menu items to the right */
+  text-align: right;
 }
 
 .nav-menu li {
@@ -91,14 +93,14 @@ body {
 }
 
 .nav-menu li a.active {
-  background-color: #e8c28e;
-  color: #664220;
+  background-color: #f36855;
+  color: white;
 }
 
 /* Dropdown Menu */
 .dropdown-menu {
   position: absolute;
-  right: 0; /* Changed from left to right */
+  left: 0;
   top: 100%;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
@@ -109,6 +111,7 @@ body {
   transform: translateY(10px);
   transition: all 0.3s ease;
   z-index: 100;
+  text-align: left;
 }
 
 .nav-menu li:hover .dropdown-menu {
@@ -125,14 +128,15 @@ body {
 }
 
 .dropdown-menu a:hover {
-  background-color: #f9e7bd;
-  color: #8b5a2b !important;
+  background-color: #f5f5f5;
+  color: #f39f7e !important;
 }
 
 .dropdown-menu a:last-child {
   border-bottom: none;
   border-radius: 0 0 8px 8px;
 }
+
 /* Banner Image - Optimized for Desktop */
 .banner-img {
   width: 100%;
@@ -156,15 +160,15 @@ body {
   transform: scale(1.05);
 }
 
-/* For desktop, ensure full width display */
+/* For desktop, ensure full width display
 @media (min-width: 1200px) {
   .banner-img {
     height: 500px; /* Even taller on large screens */
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+    /* max-width: 1600px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+  /* } */ 
+/* } */
 
 /* Page Container */
 .page-container {
@@ -180,21 +184,20 @@ body {
 }
 
 .signup-header h1 {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Righteous", cursive;
   font-size: 2.2rem;
-  color: #8b5a2b;
+  color: #030303;
   margin-bottom: 10px;
 }
 
 .signup-header p {
-  color: #a67c52;
+  color: #070707;
   font-size: 1.1rem;
-  font-family: "Raleway", sans-serif;
 }
 
 /* Form Container */
 .form-container {
-  background-color: white;
+  background-color: #FCE899;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -210,7 +213,7 @@ body {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #8b5a2b;
+  color: #070707;
   font-size: 1rem;
 }
 
@@ -218,22 +221,22 @@ body {
 .form-group select {
   width: 100%;
   padding: 12px 16px;
-  border: 2px solid #e8c28e;
+  border: 2px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
   transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group select:focus {
   outline: none;
-  border-color: #8b5a2b;
-  box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.2);
+  border-color: #F26E61;
+  box-shadow: 0 0 0 3px rgba(105, 5, 5, 0.2);
 }
 
 .form-group input::placeholder {
-  color: #ccc;
+  color: #aaa;
 }
 
 /* Button Styles */
@@ -241,16 +244,16 @@ body {
   display: block;
   width: 100%;
   padding: 16px;
-  background: linear-gradient(90deg, #8b5a2b 0%, #d4a76a 100%);
+  background: linear-gradient(90deg, #f9796d 0%, #f9796d 100%);
   color: white;
   border: none;
   border-radius: 50px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 15px rgba(139, 90, 43, 0.3);
+  box-shadow: 0 6px 15px rgba(183, 9, 9, 0.3);
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -258,13 +261,13 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(139, 90, 43, 0.4);
-  background: linear-gradient(90deg, #a67c52 30%, #e8c28e 100%);
+  box-shadow: 0 10px 20px rgba(100, 4, 4, 0.4);
+  background: linear-gradient(90deg, #F26E61 30%, #f35d4f 100%);
 }
 
 .btn:active {
   transform: translateY(0);
-  box-shadow: 0 4px 10px rgba(139, 90, 43, 0.3);
+  box-shadow: 0 4px 10px rgba(77, 3, 3, 0.3);
 }
 
 /* Login Link */
@@ -279,7 +282,7 @@ body {
 }
 
 .login-link a {
-  color: #8b5a2b;
+  color: #F26E61;
   text-decoration: none;
   font-weight: 700;
   margin-left: 8px;
@@ -287,13 +290,13 @@ body {
 }
 
 .login-link a:hover {
-  color: #d4a76a;
+  color: #F26E61;
   text-decoration: underline;
 }
 
 /* Footer */
 .footer {
-  background-color: #8b5a2b;
+  background-color: #f9796d;
   color: white;
   padding: 40px 5%;
   margin-top: 50px;
@@ -314,7 +317,7 @@ body {
 
 .social-icons span:hover {
   transform: translateY(-5px);
-  color: #f9e7bd;
+  color: #f79525;
 }
 
 .footer-links {
@@ -330,8 +333,8 @@ body {
 }
 
 .footer-links a:hover {
-  color: #f9e7bd;
-  text-decoration: underline;
+  color: #060302;
+  /* text-decoration: underline; */
 }
 
 .copyright {
@@ -350,10 +353,11 @@ body {
     font-size: 1rem;
   }
 
-  .banner-img {
+  /* .banner-img {
     height: 300px; /* Smaller on medium screens */
-  }
+  /* } */ 
 }
+
 @media (max-width: 768px) {
   .menu-icon {
     display: block;
@@ -370,11 +374,10 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #8b5a2b;
+    background-color: #F26E61;
     display: none;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 100;
-    justify-content: flex-start; /* Reset justification for mobile */
   }
 
   .nav-menu.active {
@@ -394,7 +397,7 @@ body {
     visibility: visible;
     transform: none;
     transition: none;
-    background-color: #a67c52;
+    background-color: #F26E61;
     border-radius: 0;
   }
 
@@ -439,11 +442,11 @@ body {
     font-size: 0.8rem;
   }
 
-  .banner-img {
+  /* .banner-img {
     height: 150px;
     margin-bottom: 30px;
   }
-
+ */
   .signup-header h1 {
     font-size: 1.5rem;
   }
