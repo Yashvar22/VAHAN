@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffeeab;
+  color: #333;
+  padding: 15px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+.menu-icon {
+  font-size: 22px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 120px;
+  background-color: #f5f5f5;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ffd166;
+  border: none;
+  border-radius: 25px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.form-group label {
+  width: 100px;
+  font-weight: bold;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer span {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px; /* Slightly smaller logo font size */
+  }
+
+  .subtitle {
+    font-size: 10px; /* Smaller subtitle font size */
+  }
+
+  .menu-icon {
+    font-size: 20px; /* Smaller menu icon size */
+  }
+
+  .banner-img {
+    height: 100px; /* Adjust banner height for smaller screens */
+  }
+
+  .welcome-text {
+    font-size: 18px; /* Smaller welcome text font size */
+  }
+
+  .btn {
+    padding: 10px; /* Smaller button padding */
+  }
+
+  .form-group label {
+    width: 80px; /* Adjust label width for smaller screens */
+  }
+
+  .footer span {
+    font-size: 16px; /* Smaller footer icon size */
+  }
+}
