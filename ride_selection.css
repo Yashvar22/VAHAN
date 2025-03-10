@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffeeab;
+  color: #333;
+  padding: 15px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+.menu-icon {
+  font-size: 22px;
+}
+
+.greeting {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.selection-title {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.ride-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.ride-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ride-option-label {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer span {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px; /* Slightly smaller logo font size */
+  }
+
+  .subtitle {
+    font-size: 10px; /* Smaller subtitle font size */
+  }
+
+  .menu-icon {
+    font-size: 20px; /* Smaller menu icon size */
+  }
+
+  .greeting {
+    font-size: 18px; /* Smaller greeting font size */
+  }
+
+  .selection-title {
+    font-size: 14px; /* Smaller selection title font size */
+  }
+
+  .ride-options {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Change to 2 columns on smaller screens */
+  }
+
+  .ride-option {
+    width: 100%; /* Ensure ride options take full width */
+  }
+
+  .icon-circle {
+    width: 60px; /* Smaller icon circle */
+    height: 60px; /* Smaller icon circle */
+  }
+
+  .ride-option-label {
+    font-size: 12px; /* Smaller ride option label font size */
+  }
+
+  .footer span {
+    font-size: 16px; /* Smaller footer icon size */
+  }
+}
