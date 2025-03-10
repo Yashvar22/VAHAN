@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffeeab;
+  color: #333;
+  padding: 15px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+.menu-icon,
+.profile-icon {
+  font-size: 22px;
+}
+
+.vehicle-icon {
+  text-align: center;
+  margin: 10px 0 20px;
+  font-size: 36px;
+}
+
+.location-container {
+  margin-bottom: 20px;
+}
+
+.location-input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 12px 15px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-icon {
+  margin-right: 10px;
+  color: #666;
+  font-size: 20px;
+}
+
+.map-selector {
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #eee;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.schedule-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.schedule-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: #ff9e9e;
+  padding: 8px;
+  width: 80px;
+  margin: 0 auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer span {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px; /* Slightly smaller logo font size */
+  }
+
+  .subtitle {
+    font-size: 10px; /* Smaller subtitle font size */
+  }
+
+  .menu-icon,
+  .profile-icon {
+    font-size: 20px; /* Smaller menu and profile icon size */
+  }
+
+  .vehicle-icon {
+    font-size: 30px; /* Smaller vehicle icon size */
+  }
+
+  .location-input {
+    padding: 10px; /* Smaller padding for location input */
+  }
+
+  .location-icon {
+    font-size: 18px; /* Smaller location icon size */
+  }
+
+  .map-selector {
+    font-size: 10px; /* Smaller map selector font size */
+  }
+
+  .schedule-icon {
+    font-size: 18px; /* Smaller schedule icon size */
+  }
+
+  .btn {
+    padding: 10px; /* Smaller button padding */
+  }
+
+  .btn-secondary {
+    padding: 6px; /* Smaller secondary button padding */
+    width: 70px; /* Smaller width for secondary button */
+  }
+
+  .footer span {
+    font-size: 16px; /* Smaller footer icon size */
+  }
+}
